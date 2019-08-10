@@ -1,0 +1,138 @@
+table {
+  white-space: pre-wrap;
+  border-collapse: collapse;
+  width:100%;
+  border:1px solid #EEEEEE;
+}
+
+p {
+  margin: 0;
+}
+
+th {
+  text-align: left;
+}
+
+.highlighted-yellow {
+  background-color: yellow;
+}
+
+.highlighted-red {
+  background-color: red;
+}
+
+#pagination {
+  display: inline;
+}
+
+.visibility-toggle {
+  margin-left: 10px;
+  margin-right: 15px;
+  filter: invert(100%);
+  display: inline;
+  cursor: pointer;
+}
+
+#visibility-selectors {
+  margin-top: 10px;
+}
+
+.table-headers {
+  white-space: nowrap;
+  height: 50%;
+  background-color: black;
+  color: white;
+  vertical-align: baseline;
+}
+
+.table-headers th {
+  font-weight: normal;
+}
+
+.row:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(238, 238, 238);
+}
+
+.modal-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal-content {
+  margin: auto;
+  height: 55%;
+  width: 50%;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  border-radius: 4px;
+}
+
+#pagination {
+  display: inline-block;
+}
+
+#info {
+  white-space: pre-wrap;
+  width: 100%;
+}
+#row-editor input {
+  display: block;
+}
+
+#row-editor label {
+  float: left;
+}
+
+#editor-id {
+  width: 40%;
+}
+
+#editor-email {
+  width: 25%;
+}
+
+#editor-img {
+  display: block;
+}
+
+#editor-memo {
+  display: block;
+  width: 40%;
+}
+
+#editor-submit {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 42px;
+  color: #333;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-family:'Source Sans Pro', sans-serif;
+  margin: 25 125;
+}

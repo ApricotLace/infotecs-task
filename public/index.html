@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Table</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel='stylesheet'>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <form id="filter-form">
+    <input id="filter-input" type="text" placeholder="Input keyword here">
+    <input type ="submit" value="Filter">
+  </form>
+  <form id="filter-by-column-form">
+    <input id="filter-by-column-input" type="text" placeholder="Input keyword here">
+    <select id="select-column">
+      <option value="id">ID</option>
+      <option value="name-first">First Name</option>
+      <option value="name-last">Last Name</option>
+      <option value="email">Email</option>
+      <option value="gender">Gender</option>
+      <option value="memo">Memo</option>
+    </select>
+    <input type ="submit" value="FilterByColumn">
+  </form>
+  <button id="reset-button">Reset</button>
+  <div id="pagination"></div>
+  <div id="visibility-selectors"></div>
+  <div id="info"></div>
+  <br>
+  <div id="root"></div>
+  <div class="modal-container hidden">
+    <div class="modal-content">
+      <div id="close-modal" class="close">+</div>
+      <form id="row-editor">
+        <label>id</label><br>
+        <input id="editor-id" type="text">
+        <br>
+        <label>First Name</label><br>
+        <input id="editor-first" type="text">
+        <br>
+        <label>Last Name</label><br>
+        <input id="editor-last" type="text">
+        <br>
+        <label>Email</label><br>
+        <input id="editor-email" type="text">
+        <br>
+        <label>Gender</label><br>
+        <input id="editor-gender" type="text">
+        <br>
+        <label>Memo</label><br>
+        <textarea id="editor-memo" cols="40" rows="5"></textarea>
+        <br>
+        <label>Image</label><br>
+        <img id="editor-img" src=''>
+        <input id="editor-submit" type="submit" value="Change">
+      </form>
+    </div>
+  </div>
+  <script src="../build/bundle.js"></script>
+</body>
+</html>
